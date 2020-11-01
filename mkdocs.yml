@@ -1,0 +1,19 @@
+site_name: pNote
+site_url: https://vpnry.github.io/mkdocs-template/
+
+theme:
+  name: material
+
+extra_css:
+  - stylesheets/extra.css
+
+# https://squidfunk.github.io/mkdocs-material/reference/code-blocks/
+
+markdown_extensions:
+  - pymdownx.keys
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
