@@ -84,7 +84,7 @@ def returnYes:
 
 - mermaid graph
 
-**You ned to enable mermaid first in `mkdocs.yml` **
+** You ned to enable mermaid first in `mkdocs.yml` **
 
 ```
 References:
@@ -101,4 +101,5 @@ graph TD
     B --> C{Decision}
     C -->|One| D[Result 1]
     C -->|Two| E[Result 2]
+    
 ```
