@@ -1,11 +1,10 @@
 # Git page with mkdocs-material
 
-Using `mkdocs-material`
-
 You are viewing a demo of this repository:
 
 [https://github.com/vpnry/mkdocs-template](https://github.com/vpnry/mkdocs-template)
 
+`mkdocs-material` ++ctrl+shift+m+k+d+o+c+s++ 
 
 ## Auto deploy to gh-pages branch with Github Action
 
@@ -59,24 +58,47 @@ Like the one you are viewing now:
 ``` javascript hl_lines="3"
 
 function hightLightWith(pymdownx) {
-  let javascript = "Code highlight with pymdownx and extra css docs/stylesheets/extra.css"
+  let javascript = "Code highlight with pymdownx"
+  const str = javascript + " and extra css docs/stylesheets/extra.css"
   return str
 }
 
 ```
 
-- Python and highlight range line no 3 to 4
+- Python and highlight ranges, line: 1-2 5-6
 
-``` python hl_lines="3 4"
+``` python hl_lines="1-2 5-6"
 
 import os
 print("This line is not highlighted")
 print("This line is highlighted by adding python hl_lines='2'")
 def returnYes:
   return "yes"
+# This line is a comment.
   
 ```
 
 - keyboard keys
 
 ++ctrl+alt+shift+del++
+
+- mermaid graph
+
+**You ned to enable mermaid first in `mkdocs.yml` **
+
+```
+References:
+
+https://github.com/mermaid-js/mermaid/
+https://github.com/squidfunk/mkdocs-material/issues/693#issuecomment-411885426
+```
+
+
+``` mermaid
+
+graph TD
+    A[Hard] -->|Text| B(Round)
+    B --> C{Decision}
+    C -->|One| D[Result 1]
+    C -->|Two| E[Result 2]
+```

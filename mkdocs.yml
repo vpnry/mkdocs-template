@@ -4,11 +4,13 @@ site_url: https://vpnry.github.io/mkdocs-template/
 theme:
   name: material
 
+
 extra_css:
   - stylesheets/extra.css
 
-# https://squidfunk.github.io/mkdocs-material/reference/code-blocks/
+extra_javascript:
 
+# https://squidfunk.github.io/mkdocs-material/reference/code-blocks/
 markdown_extensions:
   - pymdownx.keys
   - pymdownx.highlight:
@@ -17,3 +19,37 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
 
+
+
+
+
+
+
+
+
+
+# If you want to enable mermaid, slow down the site (load JS library)
+# Usemif you need a lotnof graph. You can also use make a custom include html file and only include it for a particular page.
+
+
+#extra_css:
+#  - stylesheets/extra.css
+#  - https://unpkg.com/mermaid@8.8.2/dist/mermaid.css
+#
+#extra_javascript:
+#  - https://unpkg.com/mermaid@8.8.2/dist/mermaid.min.js
+#
+#
+## https://squidfunk.github.io/mkdocs-material/reference/code-blocks/
+#markdown_extensions:
+#  - pymdownx.keys
+#  - pymdownx.highlight:
+#      linenums: true
+#  - pymdownx.superfences:
+#      custom_fences:
+#        - name: mermaid
+#          class: mermaid
+#          format: !!python/name:pymdownx.superfences.fence_div_format
+#  - pymdownx.inlinehilite
+#  - pymdownx.snippets
+#
